@@ -116,11 +116,11 @@ extension SeverityStyle.TextRepresentation
         case .numeric:      return String(describing: severity.rawValue)
         case .colorCoded:
             switch severity {
-            case .verbose:  return "▫️"
-            case .debug:    return "▪️"
-            case .info:     return "🔷"
-            case .warning:  return "🔶"
-            case .error:    return "❌"
+			case .verbose:  return "# TRACE"
+			case .debug:    return "# DEBUG"
+			case .info:     return "# INFO"
+			case .warning:  return "# WARNING"
+			case .error:    return "# ERROR"
             }
         }
     }
